@@ -1,0 +1,15 @@
+import random
+
+mas = []
+
+for i in range(32):
+    mas.append(chr(1040 + i))
+
+letter = []
+
+for i in range(5):
+    letterNum = random.randint(0, 31)
+    letter.append(mas[letterNum])
+
+letter = ''.join(letter)
+print(letter)
