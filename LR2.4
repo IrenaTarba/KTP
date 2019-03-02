@@ -1,0 +1,9 @@
+string = str(input("\n Введите строку: "))
+stringNum = []
+
+for i in range(len(string)):
+    if(ord(string[i]) >= 48 and ord(string[i]) <= 57):
+        stringNum.append(string[i])
+
+stringNum = ''.join(stringNum)
+print(stringNum)
